@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { cn } from "@/lib/utils"
+import { Check, X } from "lucide-react"
 
 export type FieldOrientation = "vertical" | "horizontal" | "responsive"
 
@@ -133,6 +134,53 @@ export function FieldTitle({ className, ...props }: FieldTitleProps) {
   return (
     <div className={cn("text-sm font-medium text-gray-900", className)} {...props} />
   )
+}
+
+
+export type FieldStatusState = "idle" | "loading" | "success" | "error" | "exists"
+
+export interface FieldStatusProps extends React.HTMLAttributes<HTMLDivElement> {
+  state?: FieldStatusState
+}
+
+export function FieldStatus({ state = "idle", className, ...props }: FieldStatusProps) {
+  if (state === "idle") return null
+
+  if (state === "loading") {
+    return (
+      <div
+        aria-live="polite"
+        aria-busy
+        className={cn("flex items-center justify-center", className)}
+        {...props}
+      >
+        <span
+          className={cn(
+            "h-4 w-4 animate-spin rounded-full border-2 border-gray-300",
+            "border-t-black"
+          )}
+        />
+      </div>
+    )
+  }
+
+  if (state === "success" || state === "exists") {
+    return (
+      <div aria-live="polite" className={cn("text-green-600", className)} {...props}>
+        <Check className="h-4 w-4" />
+      </div>
+    )
+  }
+
+  if (state === "error") {
+    return (
+      <div aria-live="polite" className={cn("text-red-600", className)} {...props}>
+        <X className="h-4 w-4" />
+      </div>
+    )
+  }
+
+  return null
 }
 
 

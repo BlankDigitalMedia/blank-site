@@ -39,7 +39,7 @@ export function HomeHero({
     title: "About",
     description: <a href="/about" className="underline text-muted-foreground hover:text-foreground">I build things to understand them. Here’s what that means →</a>,
     header: null,
-    className: "md:col-span-1",
+    className: "md:col-span-2 lg:col-span-1",
     icon: <IconUser className="h-4 w-4 text-neutral-500" />,
     },
     {
