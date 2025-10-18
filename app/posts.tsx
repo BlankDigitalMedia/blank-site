@@ -53,7 +53,7 @@ function List({ posts }) {
                     </span>
                   )}
 
-                  <span className="grow dark:text-gray-100">
+                  <span className="grow">
                     <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-all rounded-xl py-0.5 px-1.5">
                       {post.title}
                     </span>

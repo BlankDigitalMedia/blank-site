@@ -1,40 +1,47 @@
 import "./globals.css";
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Alef, Abyssinica_SIL, Overpass_Mono } from "next/font/google";
 import { Analytics } from "./analytics";
 import { Header } from "./header";
 import { Footer } from "./footer";
 import { doge } from "./doge";
 
-const geist = Geist({
+const alef = Alef({
   subsets: ["latin"],
-  variable: "--font-geist-sans"
+  weight: "400",
+  variable: "--font-sans",
 });
 
-const geistMono = Geist_Mono({
+const abyssinicaSil = Abyssinica_SIL({
   subsets: ["latin"],
-  variable: "--font-geist-mono",
-  fallback: ["ui-monospace", "SFMono-Regular", "Consolas", "Liberation Mono", "Menlo", "monospace"]
+  weight: "400",
+  variable: "--font-serif",
+});
+
+const overpassMono = Overpass_Mono({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-mono",
 });
 
 export const metadata = {
-  title: "Guillermo Rauch's blog",
+  title: "Dave Blank's blog",
   description:
-    "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
+    "Builder. Technologist. AI Tinkerer. Writing about technology, creativity, and the things I tinker with.",
   openGraph: {
-    title: "Guillermo Rauchg's blog",
+    title: "Dave Blank's blog",
     description:
-      "Guillermo Rauch is the CEO and founder of Vercel, a software engineer, and the creator of Next.js, Mongoose, Socket.io and other open source libraries.",
-    url: "https://rauchg.com",
-    siteName: "Guillermo Rauchg's blog",
+      "Builder. Technologist. AI Tinkerer. Writing about technology, creativity, and the things I tinker with.",
+    url: "https://daveblank.dev",
+    siteName: "Dave Blank's blog",
     images: ["/opengraph-image"],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rauchg",
-    creator: "@rauchg",
+    site: "@isblank_dave",
+    creator: "@isblank_dave",
   },
-  metadataBase: new URL("https://rauchg.com"),
+  metadataBase: new URL("https://daveblank.dev"),
 };
 
 export const viewport = {
@@ -49,7 +56,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geist.variable} ${geistMono.variable} ${geist.className} antialiased`}
+      className={`${alef.variable} ${abyssinicaSil.variable} ${overpassMono.variable} ${alef.className} antialiased theme`}
       suppressHydrationWarning={true}
     >
       <head>
@@ -58,9 +65,14 @@ export default function RootLayout({
             __html: `(${doge.toString()})();`,
           }}
         />
+        <script
+          async
+          crossOrigin="anonymous"
+          src="https://tweakcn.com/live-preview.min.js"
+        />
       </head>
 
-      <body className="dark:text-gray-100 max-w-2xl m-auto">
+      <body className="max-w-2xl m-auto">
         <main className="p-6 pt-3 md:pt-6 min-h-screen">
           <Header />
           {children}

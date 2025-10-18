@@ -13,8 +13,8 @@ export async function GET() {
     <updated>${posts[0].date}</updated>
     <id>https://rauchg.com/</id>
     <author>
-      <name>Guillermo Rauch</name>
-      <email>rauchg@gmail.com</email>
+      <name>Dave Blank</name>
+      <email>dave@blankdigital.media</email>
     </author>
     ${posts.slice(0, max).reduce((acc, post) => {
       const dateMatch = post.date.match(/\d{4}/);

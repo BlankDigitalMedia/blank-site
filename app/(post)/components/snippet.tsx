@@ -7,7 +7,7 @@ export const Snippet = ({ children, scroll = true, caption = null }) => (
       p-4
       text-sm
       bg-neutral-200 text-neutral-700
-      dark:bg-[#222] dark:text-gray-300
+      dark:bg-muted dark:text-muted-foreground
 
       ${
         scroll

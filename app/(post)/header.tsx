@@ -29,7 +29,7 @@ export function Header({ posts }: { posts: Post[] }) {
 
   return (
     <>
-      <h1 className="text-2xl font-bold mb-1 dark:text-gray-100">
+      <h1 className="text-2xl font-bold mb-1">
         {post.title}
       </h1>
 
@@ -38,11 +38,11 @@ export function Header({ posts }: { posts: Post[] }) {
           <span className="hidden md:inline">
             <span>
               <a
-                href="https://twitter.com/rauchg"
+                href="https://x.com/isblank_dave"
                 className="hover:text-neutral-800 dark:hover:text-neutral-400"
                 target="_blank"
               >
-                @rauchg
+                @isblank_dave
               </a>
             </span>
 

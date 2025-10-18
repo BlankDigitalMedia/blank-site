@@ -35,18 +35,18 @@ export async function GET(req: NextRequest) {
   }
 
   if (url.searchParams.get("incr") != null) {
-    const views = await redis.hincrby("views", id, 1);
-    return NextResponse.json({
-      ...post,
-      views,
-      viewsFormatted: commaNumber(views),
-    });
+  const views = redis ? await redis.hincrby("views", id, 1) : 0;
+  return NextResponse.json({
+  ...post,
+  views,
+  viewsFormatted: commaNumber(views),
+  });
   } else {
-    const views = (await redis.hget("views", id)) ?? 0;
-    return NextResponse.json({
-      ...post,
-      views,
-      viewsFormatted: commaNumber(Number(views)),
-    });
+  const views = redis ? ((await redis.hget("views", id)) ?? 0) : 0;
+  return NextResponse.json({
+  ...post,
+  views,
+  viewsFormatted: commaNumber(Number(views)),
+  });
   }
 }

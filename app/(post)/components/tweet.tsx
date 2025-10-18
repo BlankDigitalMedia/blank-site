@@ -16,26 +16,26 @@ interface TweetArgs {
 }
 
 async function getAndCacheTweet(id: string): Promise<TweetType | undefined> {
-  // we first prioritize getting a fresh tweet
-  try {
-    const tweet = await getTweet(id);
+// we first prioritize getting a fresh tweet
+try {
+const tweet = await getTweet(id);
 
-    // @ts-ignore
-    if (tweet && !tweet.tombstone) {
-      // we populate the cache if we have a fresh tweet
-      await redis.set(`tweet:${id}`, tweet);
-      return tweet;
-    }
-  } catch (error) {
-    console.error("tweet fetch error", error);
-  }
+// @ts-ignore
+if (tweet && !tweet.tombstone) {
+// we populate the cache if we have a fresh tweet
+if (redis) await redis.set(`tweet:${id}`, tweet);
+return tweet;
+}
+} catch (error) {
+console.error("tweet fetch error", error);
+}
 
-  const cachedTweet: TweetType | null = await redis.get(`tweet:${id}`);
+const cachedTweet: TweetType | null = redis ? await redis.get(`tweet:${id}`) : null;
 
-  // @ts-ignore
-  if (!cachedTweet || cachedTweet.tombstone) return undefined;
+// @ts-ignore
+if (!cachedTweet || cachedTweet.tombstone) return undefined;
 
-  return cachedTweet;
+return cachedTweet;
 }
 
 const TweetContent = async ({ id, components }: TweetProps) => {

@@ -11,7 +11,7 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import { A } from "../../components/a";
+import { A } from "app/(post)/components/a";
 import data from "./downloads.json";
 
 const CustomLegend = (props: any) => {
@@ -248,7 +248,7 @@ export function Chart() {
           ]}
         />
       </div>
-      <p className="text-center mt-4 px-4 font-mono text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+      <p className="text-center mt-4 px-4 font-mono text-xs sm:text-sm text-muted-foreground">
         <A href="https://ai-sdk.dev">AI SDK</A> is now the #2 largest SDK for AI
         in JS/TS, but, crucially, one that's model and provider agnostic
       </p>

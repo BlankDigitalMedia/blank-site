@@ -1,4 +1,4 @@
-import { A } from '../../components/a'
+import { A } from 'app/(post)/components/a'
 
 export function Table() {
   return (
@@ -19,14 +19,14 @@ export function Table() {
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Static & semi-static UI
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 One-shot responses
               </span>
             </td>
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Full dynamic & generative UI
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 <A href="https://vercel.com/docs/functions/streaming-functions">Streaming responses</A>
               </span>
             </td>
@@ -35,14 +35,14 @@ export function Table() {
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Framework for UI & Pages
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 React / Next.js
               </span>
             </td>
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Framework for AI & Agents
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 <A href="https://ai-sdk.dev">AI SDK</A>
               </span>
             </td>
@@ -51,14 +51,14 @@ export function Table() {
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               CDN of Pixels
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 CloudFront
               </span>
             </td>
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               CDN of Tokens
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 <A href="https://vercel.com/ai-gateway">AI Gateway</A>
               </span>
             </td>
@@ -67,14 +67,14 @@ export function Table() {
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Compute for Human-written Code
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 EC2
               </span>
             </td>
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Compute for Agent-written Code
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 <A href="https://vercel.com/docs/vercel-sandbox">Sandbox</A>
               </span>
             </td>
@@ -83,21 +83,21 @@ export function Table() {
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Foreground Compute
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 Quick / CPU-bound (Lambda)
               </span>
             </td>
             <td className="border border-neutral-300 dark:border-neutral-700 px-3 sm:px-6 py-3 text-sm sm:text-base">
               Background Compute
               <br />
-              <span className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+              <span className="text-xs sm:text-sm text-muted-foreground">
                 Long running / IO-bound (<A href="https://vercel.com/fluid">Fluid</A>)
               </span>
             </td>
           </tr>
         </tbody>
       </table>
-      <p className="text-center mt-4 px-4 font-mono text-xs sm:text-sm text-gray-600 dark:text-gray-400">
+      <p className="text-center mt-4 px-4 font-mono text-xs sm:text-sm text-muted-foreground">
         Traditional cloud services and frameworks are foundational — they're not
         going away
       </p>

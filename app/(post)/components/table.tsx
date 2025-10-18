@@ -30,7 +30,7 @@ export function TR({ children }: { children: React.ReactNode }) {
 
 export function TH({ children }: { children: React.ReactNode }) {
   return (
-    <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+    <th className="px-6 py-3 text-left text-xs font-medium text-muted-foreground uppercase tracking-wider">
       {children}
     </th>
   );
@@ -38,7 +38,7 @@ export function TH({ children }: { children: React.ReactNode }) {
 
 export function TD({ children }: { children: React.ReactNode }) {
   return (
-    <td className="px-6 py-4 text-sm text-gray-900 dark:text-gray-100">
+    <td className="px-6 py-4 text-sm text-foreground">
       {children}
     </td>
   );
