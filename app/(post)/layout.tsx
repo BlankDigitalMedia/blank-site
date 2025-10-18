@@ -10,7 +10,9 @@ export default async function Layout({ children }) {
     <article className="text-foreground mb-10">
       <Header posts={posts} />
 
-      {children}
+      <div className="post">
+        {children}
+      </div>
     </article>
   );
 }

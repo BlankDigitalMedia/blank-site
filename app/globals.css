@@ -203,3 +203,43 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Newsletter-style post layout */
+.post { @apply mx-auto max-w-[68ch] px-4 sm:px-6; }
+.post :where(p, ul, ol, blockquote, pre, figure){ @apply my-6; }
+
+/* title block */
+.title-block{ @apply mb-8 space-y-3; }
+.title{ @apply text-3xl sm:text-4xl font-semibold tracking-tight; }
+.subtitle{ @apply text-base text-muted-foreground; }
+
+/* meta chips */
+.meta{ @apply flex flex-wrap gap-2 text-sm text-muted-foreground; }
+.chip{ @apply inline-flex items-center rounded-full border px-2.5 py-1 bg-card opacity-70; }
+
+/* headings for section turns */
+.post h2{ @apply mt-12 mb-4 text-2xl font-semibold tracking-tight; }
+.post h3{ @apply mt-10 mb-3 text-xl font-semibold; }
+
+/* lead paragraph */
+.lead{ @apply text-lg text-foreground opacity-90; }
+/* First paragraph after title gets lead styling */
+.post > p:first-of-type { @apply text-lg text-foreground opacity-90; }
+
+/* pull quote */
+.pull{ @apply my-10 border-l-4 pl-4 text-lg leading-relaxed; border-color: var(--accent); }
+.pull cite{ @apply block pt-2 text-sm text-muted-foreground; }
+
+/* figures */
+.figure{ @apply my-8 overflow-hidden rounded-2xl border border-border bg-card shadow; }
+.figure img,.figure video{ @apply block w-full h-auto; }
+.caption{ @apply px-4 py-3 text-sm text-muted-foreground; }
+
+/* divider */
+.divider{ @apply my-10 h-px bg-border opacity-70 rounded; }
+
+/* dark polish */
+@media (prefers-color-scheme: dark){
+  .figure, pre{ @apply bg-card opacity-70; }
+  .divider{ @apply bg-border opacity-60; }
+}
