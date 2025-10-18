@@ -30,7 +30,16 @@ export function HomeHero({
     },
     {
       title: "Latest Post",
-      description: latestPost ? <a href={`/post/${latestPost.id}`} className="underline text-muted-foreground hover:text-foreground">{latestPost.title}</a> : "No posts yet",
+      description: latestPost ? (
+        <a
+          href={`/${new Date(latestPost.date).getFullYear()}/${latestPost.id}`}
+          className="underline text-muted-foreground hover:text-foreground"
+        >
+          {latestPost.title}
+        </a>
+      ) : (
+        "No posts yet"
+      ),
       header: null,
       className: "md:col-span-1",
       icon: <IconBook className="h-4 w-4 text-neutral-500" />,
