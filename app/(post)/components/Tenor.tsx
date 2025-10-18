@@ -13,15 +13,12 @@ interface TenorProps {
 export default function Tenor({ postid, gifUrl, aspectRatio = "1.65625", width = "100%", title, displayTitle, searchLink }: TenorProps) {
   if (gifUrl) {
     return (
-      <div style={{ width: '100%', overflow: 'hidden' }}>
+      <div style={{ overflow: 'hidden', textAlign: 'left' }}>
         <img
           src={gifUrl}
           alt={displayTitle}
-          style={{ clipPath: 'inset(0 10% 0 10%)', width: '100%', height: 'auto' }}
+          style={{ clipPath: 'inset(0 10% 0 10%)', width: 'auto', height: 'auto', display: 'block' }}
         />
-        <p style={{ textAlign: 'center', marginTop: '0.5rem' }}>
-          <a href={`https://tenor.com/view/${title}-gif-${postid || ''}`}>{displayTitle} GIF</a> from <a href={searchLink}>GIFs</a>
-        </p>
       </div>
     )
   }
