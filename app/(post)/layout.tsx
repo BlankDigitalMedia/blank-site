@@ -8,7 +8,9 @@ export default async function Layout({ children }) {
 
   return (
     <article className="text-foreground mb-10">
-      <Header posts={posts} />
+      <div className="mx-auto max-w-[68ch] px-4 sm:px-6">
+        <Header posts={posts} />
+      </div>
 
       <div className="post">
         {children}

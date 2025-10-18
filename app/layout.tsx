@@ -72,13 +72,16 @@ export default function RootLayout({
         />
       </head>
 
-      <body className="max-w-2xl m-auto">
-        <main className="p-6 pt-3 md:pt-6 min-h-screen">
-          <Header />
+      <body>
+        <main className="min-h-screen">
+          <div className="max-w-2xl mx-auto px-6 pt-3 md:pt-6">
+            <Header />
+          </div>
           {children}
+          <div className="max-w-2xl mx-auto">
+            <Footer />
+          </div>
         </main>
-
-        <Footer />
         <Analytics />
       </body>
     </html>

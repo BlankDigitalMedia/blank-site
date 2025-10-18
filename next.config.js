@@ -33,6 +33,12 @@ module.exports = withMDX({
         pathname: "/**",
         search: "",
       },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
   redirects() {
