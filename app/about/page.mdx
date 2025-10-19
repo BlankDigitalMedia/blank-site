@@ -1,16 +1,17 @@
 import Image from "next/image";
 
 import rauchgPhoto from "../../public/images/blank-about.png";
+import { BentoSection } from "@/components/about/BentoSection";
 
 export const metadata = {
-  title: 'Dave Blank',
-  description: 'An overview of my career and technical contributions',
+  title: "Dave Blank",
+  description: "An overview of my career and technical contributions",
   openGraph: {
-    title: 'Dave Blank',
-    description: 'An overview of my career and technical contributions',
-    images: [{ url: '/about/opengraph-image' }]
-  }
-}
+    title: "Dave Blank",
+    description: "An overview of my career and technical contributions",
+    images: [{ url: "/about/opengraph-image" }],
+  },
+};
 
 <div className="max-w-2xl mx-auto px-6">
 
@@ -40,3 +41,7 @@ I live in Michigan with my wife, nine dogs, and fifteen chickens. I’m a Marine
 If you like learning by doing, building until it breaks, and breaking it until it’s better, welcome. You’re in the right place.
 
 </div>
+
+<br></br>
+
+<BentoSection />

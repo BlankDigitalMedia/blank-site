@@ -1,6 +1,6 @@
 import { Posts } from "./posts";
 import { getPosts } from "./get-posts";
-import { HomeHero } from "@/components/HomeHero";
+import { HeroBento } from "@/components/HeroBento";
 import { getNowPlayingTrack } from "@/lib/spotify";
 
 export const revalidate = 300;
@@ -11,7 +11,9 @@ export default async function Home() {
   const nowPlaying = await getNowPlayingTrack();
   return (
     <>
-      <HomeHero latestPost={latestPost} nowPlaying={nowPlaying} />
+      <div className="mb-16">
+        <HeroBento latestPost={latestPost} nowPlaying={nowPlaying} />
+      </div>
       <div className="max-w-2xl mx-auto px-6">
         <Posts posts={posts} />
       </div>
