@@ -2,7 +2,7 @@
 
 import { BentoGrid, BentoGridItem } from "@/components/ui/bento-grid";
 import { NewsletterCard } from "@/components/NewsletterCard";
-import { IconHome, IconBook, IconUser, IconMail } from "@tabler/icons-react";
+import { PaperClipIcon, WrenchScrewdriverIcon, UserCircleIcon, EnvelopeIcon } from "@heroicons/react/24/outline";
 import { Post } from "@/app/get-posts";
 import { NowPlaying, type NowPlayingTrack } from "@/components/NowPlaying";
 
@@ -15,11 +15,11 @@ export function HomeHero({
 }) {
   const items = [
     {
-      title: "Builder. Technologist. Tinkerer.",
-      description: "I break things until they make sense.",
-      header: null,
-      className: "md:col-span-2 lg:col-span-3",
-      icon: <IconHome className="h-4 w-4 text-neutral-500" />,
+    title: "Builder. Technologist. Tinkerer.",
+    description: "I break things until they make sense.",
+    header: null,
+    className: "md:col-span-2 lg:col-span-3",
+    icon: <WrenchScrewdriverIcon className="h-5 w-5 text-neutral-500" />,
     },
     {
       title: "Now Listening",
@@ -42,21 +42,21 @@ export function HomeHero({
       ),
       header: null,
       className: "md:col-span-1",
-      icon: <IconBook className="h-4 w-4 text-neutral-500" />,
+      icon: <PaperClipIcon className="h-5 w-5 text-neutral-500" />,
     },
     {
     title: "About",
     description: <a href="/about" className="underline text-muted-foreground hover:text-foreground">I build things to understand them. Here’s what that means →</a>,
     header: null,
     className: "md:col-span-2 lg:col-span-1",
-    icon: <IconUser className="h-4 w-4 text-neutral-500" />,
+    icon: <UserCircleIcon className="h-5 w-5 text-neutral-500" />,
     },
     {
       title: "Newsletter",
       description: <NewsletterCard />,
       header: null,
       className: "md:col-span-2 lg:col-span-3",
-      icon: <IconMail className="h-4 w-4 text-neutral-500" />,
+      icon: <EnvelopeIcon className="h-5 w-5 text-neutral-500" />,
     },
   ];
 
