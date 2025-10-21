@@ -3,17 +3,20 @@
 import { HeroBento } from "@/components/HeroBento";
 import { Post } from "@/app/get-posts";
 import { type NowPlayingTrack } from "@/components/NowPlaying";
+import { type Status } from "@/app/get-status";
 
 export function HomeHero({
-  latestPost,
+  latestPosts,
   nowPlaying,
+  status,
 }: {
-  latestPost?: Post;
+  latestPosts: Post[];
   nowPlaying: NowPlayingTrack | null;
+  status: Status | null;
 }) {
   return (
     <div className="mb-16">
-      <HeroBento latestPost={latestPost} nowPlaying={nowPlaying} />
+      <HeroBento latestPosts={latestPosts} nowPlaying={nowPlaying} status={status} />
     </div>
   );
 }
