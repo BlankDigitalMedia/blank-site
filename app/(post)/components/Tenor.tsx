@@ -1,8 +1,5 @@
-'use client'
-
 interface TenorProps {
-  postid?: string
-  gifUrl?: string
+  postid: string
   aspectRatio?: string
   width?: string
   title: string
@@ -10,31 +7,32 @@ interface TenorProps {
   searchLink: string
 }
 
-export default function Tenor({ postid, gifUrl, aspectRatio = "1.65625", width = "100%", title, displayTitle, searchLink }: TenorProps) {
-  if (gifUrl) {
-    return (
-      <div style={{ overflow: 'hidden', textAlign: 'left' }}>
-        <img
-          src={gifUrl}
-          alt={displayTitle}
-          style={{ clipPath: 'inset(0 10% 0 10%)', width: 'auto', height: 'auto', display: 'block' }}
-        />
-      </div>
-    )
-  }
-
+export default function Tenor({ 
+  postid, 
+  aspectRatio = "1.77778", 
+  width = "100%", 
+  title
+}: TenorProps) {
+  const aspect = parseFloat(aspectRatio);
+  const src = `https://tenor.com/embed/${postid}`;
+  
   return (
-    <div style={{ overflow: 'hidden', width: '100%' }}>
-      <div
-        className="tenor-gif-embed"
-        data-postid={postid}
-        data-share-method="host"
-        data-aspect-ratio={aspectRatio}
-        data-width={width}
-      >
-        <a href={`https://tenor.com/view/${title}-gif-${postid}`}>{displayTitle} GIF</a> from <a href={searchLink}>Wolf Of Wall Street GIFs</a>
-      </div>
-      <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <div style={{ width, position: 'relative' }}>
+      <div style={{ paddingTop: `${(1 / aspect) * 100}%` }} />
+      <iframe
+        src={src}
+        style={{ 
+          position: 'absolute', 
+          top: 0, 
+          left: 0, 
+          width: '100%', 
+          height: '100%',
+          display: 'block',
+          border: 0
+        }}
+        allowFullScreen
+        title={`Tenor GIF ${postid}`}
+      />
     </div>
   )
 }

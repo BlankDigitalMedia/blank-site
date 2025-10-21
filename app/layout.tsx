@@ -1,6 +1,7 @@
 import "./globals.css";
 
 import { Alef, Abyssinica_SIL, Overpass_Mono } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "./analytics";
 import { Header } from "./header";
 import { Footer } from "./footer";
@@ -61,6 +62,8 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <head>
+        <link rel="preconnect" href="https://tenor.com" />
+        <link rel="preconnect" href="https://media.tenor.com" crossOrigin="" />
         <script
           dangerouslySetInnerHTML={{
             __html: `(${doge.toString()})();`,

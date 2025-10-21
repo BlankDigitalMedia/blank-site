@@ -1,27 +1,16 @@
-export function Figure({ wide = false, children }) {
+import { ReactNode } from 'react';
+
+type FigureProps = {
+  caption?: ReactNode;
+  className?: string;
+  children: ReactNode;
+};
+
+export function Figure({ caption, className = 'figure', children }: FigureProps) {
   return (
-    <div
-      className={`
-    text-center
-    ${
-      wide
-        ? `
-      bg-gray-100
-      dark:bg-[#111]
-      relative
-      left-[50%]
-      right-[50%]
-      ml-[-50vw]
-      mr-[-50vw]
-      w-[100vw]
-    `
-        : ""
-    }
-  `}
-    >
-      <div className={wide ? "max-w-2xl mx-auto px-6" : ""}>
-        {children}
-      </div>
-    </div>
+    <figure className={className}>
+      {children}
+      {caption ? <figcaption className="caption">{caption}</figcaption> : null}
+    </figure>
   );
 }

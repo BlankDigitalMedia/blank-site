@@ -1,0 +1,19 @@
+{
+  "projects": [
+    {
+      "name": "murphie.dev",
+      "url": "https://murphie.dev",
+      "active": true
+    },
+    {
+      "name": "daveOS",
+      "url": null,
+      "active": true
+    },
+    {
+      "name": "stealth project",
+      "url": null,
+      "active": true
+    }
+  ]
+}

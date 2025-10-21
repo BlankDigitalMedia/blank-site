@@ -40,22 +40,32 @@ export function NewsletterCard() {
 
   return (
     <form onSubmit={handleSubmit}>
+      <p className="mb-2.5 text-sm text-muted-foreground">
+        Join the lab notes — occasional updates, no spam.
+      </p>
       <FieldGroup>
-        <Field orientation="horizontal" className="gap-2">
+        <Field orientation="vertical" className="gap-2">
           <FieldLabel htmlFor="newsletter-email" className="sr-only">
             Email
           </FieldLabel>
-          <Input
-            id="newsletter-email"
-            type="email"
-            placeholder="you@example.com"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <Button type="submit" disabled={status === "loading"}>
-            {status === "loading" ? "Subscribing…" : "Subscribe"}
-          </Button>
+          <div className="flex flex-col gap-2 md:flex-row md:items-center">
+            <Input
+              id="newsletter-email"
+              type="email"
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="w-full h-9 text-sm bg-card/60 placeholder:text-foreground/60 ring-1 ring-border/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            />
+            <Button
+              type="submit"
+              disabled={status === "loading"}
+              className="w-full md:w-auto shrink-0 bg-primary text-primary-foreground hover:bg-primary/90 hover:ring-1 hover:ring-primary/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
+            >
+              {status === "loading" ? "Subscribing…" : "Subscribe"}
+            </Button>
+          </div>
           <FieldStatus state={status} />
         </Field>
       </FieldGroup>
@@ -65,7 +75,7 @@ export function NewsletterCard() {
         </FieldDescription>
       )}
       {status === "exists" && (
-        <FieldDescription>You're already subscribed.</FieldDescription>
+        <FieldDescription>You&apos;re already subscribed.</FieldDescription>
       )}
       {status === "error" && (
         <FieldDescription>

@@ -25,27 +25,37 @@ export function NowPlaying({ track }: { track: NowPlayingTrack | null }) {
       href={track.url ?? undefined}
       target={track.url ? "_blank" : undefined}
       rel={track.url ? "noreferrer" : undefined}
-      className="flex items-center gap-3 text-sm text-muted-foreground hover:text-foreground"
+      className="flex flex-col gap-4 text-muted-foreground group"
     >
       {track.artworkUrl ? (
-        <Image
-          src={track.artworkUrl}
-          alt={track.name}
-          width={44}
-          height={44}
-          className="rounded"
-        />
+        <div className="w-full">
+          <Image
+            src={track.artworkUrl}
+            alt={track.name}
+            width={300}
+            height={300}
+            className="w-full h-auto rounded-lg object-cover shadow-sm aspect-square max-w-[140px] sm:max-w-[160px]"
+            priority={false}
+          />
+        </div>
       ) : null}
       <div>
-        <div className="font-medium text-foreground">{track.name}</div>
-        <div className="text-xs text-muted-foreground">{track.artist}</div>
-        <div
-          className={cn(
-            "mt-1 text-[0.65rem] uppercase tracking-wide",
-            track.isPlaying ? "text-green-500" : "text-muted-foreground"
+        <div className="text-base font-semibold text-foreground line-clamp-1 group-hover:text-foreground/90">
+          {track.name}
+        </div>
+        <div className="text-sm line-clamp-1 mt-1">{track.artist}</div>
+        <div className="mt-3 flex items-center gap-1.5">
+          {track.isPlaying && (
+            <span className="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
           )}
-        >
-          {track.isPlaying ? "Now Playing" : "Recently Played"}
+          <span
+            className={cn(
+              "text-[0.65rem] uppercase tracking-wide",
+              track.isPlaying ? "text-emerald-500" : "text-muted-foreground"
+            )}
+          >
+            {track.isPlaying ? "Now Playing" : "Recently Played"}
+          </span>
         </div>
       </div>
     </a>

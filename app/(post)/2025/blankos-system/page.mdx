@@ -1,0 +1,64 @@
+import CopyPrompt from "@/components/CopyPrompt";
+import Tenor from "@/app/(post)/components/Tenor";
+import { Figure } from "@/app/(post)/components/figure";
+
+export const metadata = {
+  title: "BlankOS: A System That's Starting to Feel Like Mine",
+  description: "I set out to build my own Linux system, but what I really found was a way to own my tools.",
+  openGraph: {
+    title: "BlankOS: A System That's Starting to Feel Like Mine",
+    description: "I set out to build my own Linux system, but what I really found was a way to own my tools.",
+    images: [{ url: "/og/blankos-system" }],
+  },
+};
+
+I set out to build my own Linux system, but what I really found was a way to own my tools.
+
+At first, it was just curiosity. I wanted to see how deep the rabbit hole went. Then I started reading Reddit threads about people losing Wi-Fi, breaking bootloaders, and spending weekends arguing with dependency chains. That was enough for me to pump the brakes.
+
+For now, I'd stay on macOS and see how far I could push it. How much of it I could rebuild, rewire, and make my own before it fought back.
+
+That's where I landed. Or maybe dove off.
+
+<Figure>
+  <Tenor 
+    postid="26595552" 
+    aspectRatio="1.77778" 
+    width="100%" 
+    title="indian-dude-jumping-in-lake-indian-dude-jumping-in-water-jumping-in-lake-missar-avstamp" 
+    displayTitle="Indian Dude Jumping In Lake Jumping In Water" 
+    searchLink="https://tenor.com/search/indian+dude+jumping+in+lake-gifs" 
+  />
+</Figure>
+
+BlankOS started right there, somewhere between curiosity and control.
+
+It kicked off with Neovim. I thought I was just building an editor, but it turned into something else. VS Code hides a lot of complexity behind slick interfaces. You get the power, but not the understanding. Neovim gives you both if you're willing to earn it. Building it piece by piece showed me which features mattered, which didn't, and which I'd been taking for granted. <CopyPrompt id="neovim" />
+
+Then came the file tree. In Cursor, I could drag and drop files around without thinking. In the terminal, I had to move them, touch them, and navigate one by one. Slower, sure, but every action stuck. I started remembering where things lived. I stopped treating directories like folders and started seeing them as systems. <CopyPrompt id="terminal" />
+
+Git came next. I held off on installing LazyGit to force myself into the CLI. I thought it would slow me down. Instead, it made me better. Now when something breaks, I know how to fix it. I don't need a safety net, just a terminal and time. <CopyPrompt id="git" />
+
+Then I found tmux, and everything changed. Running tmux inside Ghostty turned my terminal into a cockpit. I can split panes, resize windows, and move between projects without touching the mouse. It feels mechanical in the best way, like working a control panel that only I understand. Once it clicks, you can't go back. <CopyPrompt id="tmux" />
+
+Outside the terminal, I run AeroSpace to tile windows and keep my fingers glued to the keyboard. Mouse is lava. Staying still keeps my focus sharp. <CopyPrompt id="aerospace" />
+
+Now I'm looking at btop. I might build my own version. Smaller, cleaner, something that looks like BlankOS. Maybe it shows Wi-Fi signal strength, unread emails from my Convex inbox, or the song I'm listening to on Spotify. Whatever it becomes, it should fit my rhythm, not the other way around.
+
+Owning my setup at the .config level changed how I think about work. Customizing my zshrc pushed me closer to finding that balance between human and AI development. When I know my own commands, I rely less on automation. It saves tokens and builds intuition. And yeah, it makes me feel a little like Mr. Robot.
+
+<Figure>
+  <Tenor 
+    postid="13530453" 
+    aspectRatio="1.77778" 
+    width="100%" 
+    title="yes-yeah-we-did-it-great-wow" 
+    displayTitle="Yes Yeah" 
+    searchLink="https://tenor.com/search/yes-gifs" 
+  />
+</Figure>
+
+BlankOS isn't done. It's barely started. But every shortcut, every config, every experiment gets me closer to a system that works the way I do.
+
+At this point, it's not about switching operating systems.
+It's about earning one.

@@ -244,6 +244,20 @@
   .divider{ @apply bg-border opacity-60; }
 }
 
+/* Minimal blink animation for status indicators */
+@keyframes blink {
+  0%, 60%, 100% {
+    opacity: 0.3;
+  }
+  30% {
+    opacity: 1;
+  }
+}
+
+.animate-blink {
+  animation: blink 1.2s step-end infinite;
+}
+
 /* Terminal Bento Grid Styles */
 @keyframes scanline {
   0% {
@@ -251,15 +265,6 @@
   }
   100% {
     top: 100%;
-  }
-}
-
-@keyframes blink {
-  from, to {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
   }
 }
 
