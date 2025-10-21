@@ -55,38 +55,13 @@ export function HeroBento({ latestPosts, nowPlaying, status }: HeroBentoProps) {
               ))}
             </ul>
           ) : (
-            <div className="pl-5">
-              <span className="text-foreground">something new</span>
-              <span className="ml-2 inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500/60 motion-safe:animate-blink motion-reduce:animate-none" />
-            </div>
-          )}
-          <div className="mt-3 border-t border-border/50 pt-3 relative">
-            <div className="absolute -top-2 left-0 flex gap-1.5">
-              <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40" />
-              <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40" />
-              <span className="h-1.5 w-1.5 rounded-full bg-muted-foreground/40" />
-            </div>
-            <div className="flex flex-wrap gap-2 md:justify-end">
-              <Link
-                href="/blog"
-                className="inline-flex items-center rounded-full px-3 py-1 text-xs ring-1 ring-border/60 hover:ring-border text-foreground/90 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-              >
-                Read the blog
-              </Link>
-              <Link
-                href="/now"
-                className="inline-flex items-center rounded-full px-3 py-1 text-xs ring-1 ring-border/60 hover:ring-border text-foreground/90 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-              >
-                Now page
-              </Link>
-              <Link
-                href="mailto:hello@davidblank.dev"
-                className="inline-flex items-center rounded-full px-3 py-1 text-xs ring-1 ring-border/60 hover:ring-border text-foreground/90 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/50"
-              >
-                Email me
-              </Link>
-            </div>
+          <div className="pl-5">
+          <span className="text-foreground">something new</span>
+          <span className="ml-2 inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500/60 motion-safe:animate-blink motion-reduce:animate-none" />
           </div>
+          )}
+          <div className="mt-3 border-t border-border/50" />
+
         </div>
       ),
       header: null,
