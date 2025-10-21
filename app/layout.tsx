@@ -77,18 +77,18 @@ export default function RootLayout({
       </head>
 
       <body>
-        <ConvexClientProvider>
-          <main className="min-h-screen">
-            <div className="max-w-2xl mx-auto px-6 pt-3 md:pt-6">
-              <Header />
-            </div>
-            {children}
-            <div className="max-w-2xl mx-auto">
-              <Footer />
-            </div>
-          </main>
-          <Analytics />
-        </ConvexClientProvider>
+      <ConvexClientProvider>
+      <main className="min-h-screen">
+      <div className="max-w-2xl mx-auto px-6 pt-3 md:pt-6">
+      <Header />
+      </div>
+      {children}
+      <div className="max-w-2xl mx-auto">
+      <Footer />
+      </div>
+      </main>
+      </ConvexClientProvider>
+      <Analytics />
       </body>
     </html>
   );

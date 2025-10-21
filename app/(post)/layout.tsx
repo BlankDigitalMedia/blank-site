@@ -1,5 +1,6 @@
 import { Header } from "./header";
 import { getPosts } from "../get-posts";
+import { Analytics } from "../analytics";
 
 export const revalidate = 300;
 
@@ -13,8 +14,9 @@ export default async function Layout({ children }) {
       </div>
 
       <div className="post">
-        {children}
+      {children}
       </div>
-    </article>
+        <Analytics />
+        </article>
   );
 }
