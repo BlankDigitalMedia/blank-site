@@ -33,7 +33,7 @@ export function HeroBento({ latestPosts, nowPlaying, status }: HeroBentoProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 pt-2">
             <a
-              href="https://cal.com/daveblank"
+              href="https://cal.com/david-blank-umw37b"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 bg-foreground text-background rounded-lg font-medium hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"

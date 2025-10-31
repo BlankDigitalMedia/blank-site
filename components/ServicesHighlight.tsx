@@ -13,7 +13,7 @@ export function ServicesHighlight() {
       title: "Free AI Audit",
       description: "30-minute call to find 2-3 ways AI could save you time or money",
       price: "Free",
-      link: "https://cal.com/daveblank",
+      link: "https://cal.com/david-blank-umw37b",
       external: true,
     },
     {
