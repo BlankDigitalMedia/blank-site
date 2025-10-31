@@ -1,6 +1,6 @@
 import "./globals.css";
 
-import { Alef, Abyssinica_SIL, Overpass_Mono } from "next/font/google";
+import { Roboto_Flex, PT_Serif, IBM_Plex_Mono } from "next/font/google";
 import Script from "next/script";
 import { Analytics } from "./analytics";
 import { Header } from "./header";
@@ -8,21 +8,21 @@ import { Footer } from "./footer";
 import { doge } from "./doge";
 import { ConvexClientProvider } from "@/components/ConvexClientProvider";
 
-const alef = Alef({
+const robotoFlex = Roboto_Flex({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   variable: "--font-sans",
 });
 
-const abyssinicaSil = Abyssinica_SIL({
+const ptSerif = PT_Serif({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["400", "700"],
   variable: "--font-serif",
 });
 
-const overpassMono = Overpass_Mono({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   variable: "--font-mono",
 });
 
@@ -75,7 +75,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${alef.variable} ${abyssinicaSil.variable} ${overpassMono.variable} ${alef.className} antialiased theme`}
+      className={`${robotoFlex.variable} ${ptSerif.variable} ${ibmPlexMono.variable} ${robotoFlex.className} antialiased theme`}
       suppressHydrationWarning={true}
     >
       <head>
