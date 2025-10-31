@@ -74,16 +74,22 @@ async function spotifyFetch<T>(path: string): Promise<T | null> {
   const token = await resolveAccessToken();
 
   if (!token) {
-    console.error("Missing SPOTIFY_TOKEN environment variable.");
+    console.error("Missing Spotify auth token. Set refresh token and client credentials or SPOTIFY_TOKEN.");
     return null;
   }
 
-  const res = await fetch(`${SPOTIFY_API_BASE}${path}`, {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-    cache: "no-store",
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${SPOTIFY_API_BASE}${path}`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      cache: "no-store",
+    });
+  } catch (err) {
+    console.error("Spotify fetch failed:", err);
+    return null;
+  }
 
   if (res.status === 204 || res.status === 205) {
     return null;
