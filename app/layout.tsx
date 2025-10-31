@@ -27,16 +27,18 @@ const overpassMono = Overpass_Mono({
 });
 
 export const metadata = {
-  title: "Dave Blank's blog",
+  title: "Dave Blank | AI & Web Tools for Southwest Michigan Small Businesses",
   description:
-    "Builder. Technologist. AI Tinkerer. Writing about technology, creativity, and the things I tinker with.",
+    "Helping small businesses in Bangor, South Haven, Kalamazoo, and Grand Rapids save time with AI tools, websites, and automation. Fast, affordable, no agency overhead.",
   openGraph: {
-    title: "Dave Blank's blog",
+    title: "Dave Blank | AI & Web Tools for Southwest Michigan Small Businesses",
     description:
-      "Builder. Technologist. AI Tinkerer. Writing about technology, creativity, and the things I tinker with.",
+      "Helping small businesses in Bangor, South Haven, Kalamazoo, and Grand Rapids save time with AI tools, websites, and automation.",
     url: "https://daveblank.dev",
-    siteName: "Dave Blank's blog",
+    siteName: "Dave Blank",
     images: ["/opengraph-image"],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
@@ -44,6 +46,21 @@ export const metadata = {
     creator: "@isblank_dave",
   },
   metadataBase: new URL("https://daveblank.dev"),
+  keywords: [
+    "AI tools Michigan",
+    "small business websites Southwest Michigan",
+    "business automation Kalamazoo",
+    "AI consultant Grand Rapids",
+    "website developer South Haven",
+    "small business technology Bangor",
+    "affordable web design Michigan",
+    "AI for small business",
+  ],
+  authors: [{ name: "Dave Blank" }],
+  creator: "Dave Blank",
+  alternates: {
+    canonical: "https://daveblank.dev",
+  },
 };
 
 export const viewport = {

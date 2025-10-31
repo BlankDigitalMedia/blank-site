@@ -23,45 +23,33 @@ type HeroBentoProps = {
 export function HeroBento({ latestPosts, nowPlaying, status }: HeroBentoProps) {
   const items = [
     {
-      title: "Builder. Technologist. Tinkerer.",
+      title: "AI & Web Tools for Southwest Michigan Small Businesses",
       density: "compact" as const,
       align: "between" as const,
       description: (
-        <div className="font-mono text-[0.95rem] leading-6 text-muted-foreground space-y-2">
-          <div className="uppercase tracking-wide text-xs text-neutral-500">
-            $ Currently hacking on:
+        <div className="space-y-3">
+          <p className="text-base leading-relaxed text-foreground">
+            I help local businesses in Bangor, South Haven, Kalamazoo, and Grand Rapids save time and grow with simple AI tools, fast websites, and smart automation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 pt-2">
+            <a
+              href="https://cal.com/daveblank"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center px-5 py-2.5 bg-foreground text-background rounded-lg font-medium hover:opacity-90 transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            >
+              Book Free 15-Min Call
+            </a>
+            <Link
+              href="/services"
+              className="inline-flex items-center justify-center px-5 py-2.5 border border-border rounded-lg font-medium hover:bg-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40"
+            >
+              See What I Can Help With
+            </Link>
           </div>
-          {status?.projects && status.projects.length > 0 ? (
-            <ul className="pl-5 space-y-1.5">
-              {status.projects.map((project, idx) => (
-                <li key={idx} className="flex items-center gap-2">
-                  {project.url ? (
-                    <Link
-                      href={project.url}
-                      className="underline decoration-dotted underline-offset-4 hover:text-foreground"
-                      target={project.url.startsWith("http") ? "_blank" : undefined}
-                      rel={project.url.startsWith("http") ? "noreferrer" : undefined}
-                    >
-                      {project.name}
-                    </Link>
-                  ) : (
-                    <span className="text-foreground">{project.name}</span>
-                  )}
-                  <span
-                    className={`inline-flex h-1.5 w-1.5 rounded-full ${project.active !== false ? "bg-emerald-500/60" : "bg-muted-foreground/40"} motion-safe:animate-blink motion-reduce:animate-none`}
-                    aria-label={project.active ? "live" : "idle"}
-                  />
-                </li>
-              ))}
-            </ul>
-          ) : (
-          <div className="pl-5">
-          <span className="text-foreground">something new</span>
-          <span className="ml-2 inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500/60 motion-safe:animate-blink motion-reduce:animate-none" />
+          <div className="pt-3 text-sm text-muted-foreground border-t border-border/50">
+            <span className="uppercase tracking-wide text-xs">Based in Michigan</span> • Fast, affordable, no agency overhead
           </div>
-          )}
-          <div className="mt-3 border-t border-border/50" />
-
         </div>
       ),
       header: null,
@@ -84,19 +72,19 @@ export function HeroBento({ latestPosts, nowPlaying, status }: HeroBentoProps) {
       icon: null,
     },
     {
-      title: "About",
+      title: "Why Work With Me",
       align: "center" as const,
       description: (
-        <div className="text-center">
+        <div className="text-center space-y-2">
+          <p className="text-sm text-foreground">
+            Marine veteran, builder, and lifelong learner based in Michigan. I keep things simple, move fast, and don't waste your time.
+          </p>
           <Link
             href="/about"
-            className="text-base sm:text-lg text-foreground hover:opacity-90 underline underline-offset-4 decoration-neutral-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded-md"
+            className="text-sm text-muted-foreground hover:text-foreground underline underline-offset-4 decoration-neutral-400/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary/40 rounded-md inline-block"
           >
-            I build things to understand them →
+            Learn more about me →
           </Link>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Blank 2.0 is the next experiment — part OS, part playground.
-          </p>
         </div>
       ),
       header: null,

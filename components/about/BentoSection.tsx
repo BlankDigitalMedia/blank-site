@@ -5,29 +5,27 @@ const sections = [
     title: "HOW I WORK",
     paragraphs: [
       [
-        "Build fast. Break early. Fix what matters.",
-        "Ghostty and nvim keep me focused.",
-        "The whiteboard keeps me honest.",
+        "I prototype quickly, iterate often, and fix only what moves the needle.",
+        "Tools like Ghostty and nvim let me stay in the code while thinking like a product owner.",
+        "My whiteboard acts as a bridge between strategy and execution, where business requirements become user stories and architecture sketches.",
       ],
     ],
   },
   {
-    title: "DIGITAL COCKPIT",
+    title: "FROM DASHBOARD TO TERMINAL",
     paragraphs: [
       [
-        "MacBook with too many terminals.",
-        "Agents running while I build.",
-        "Organized chaos that ships.",
+        "I run a fleet of terminals and AI agents on my MacBook to automate the busywork and free my brain for problem‑solving.",
+        "Coming from business, this ‘digital cockpit’ helps me translate high‑level objectives into step‑by‑step builds: from setting OKRs to spinning up a working prototype in an afternoon.",
       ],
     ],
   },
   {
-    title: "WORKBENCH",
+    title: "WHERE STRATEGY MEETS CODE",
     paragraphs: [
       [
-        "Leather notebook for thoughts worth keeping.",
-        "Whiteboard Kanban when I need to see the mess.",
-        "Nine dogs and fifteen chickens keep me humble.",
+        "My workbench balances analog and digital: a leather notebook for capturing insights from customer calls or market research, a Kanban board for visualizing experiments, and yes, a farm full of animals to keep me grounded.",
+        "This is where I turn business insights into experiments, sketching architectures, listing risks, and then committing the first line of code.",
       ],
     ],
   },
@@ -35,9 +33,7 @@ const sections = [
     title: "SYSTEMS",
     paragraphs: [
       [
-        "Linear when it’s real work.",
-        "Jira when it’s required.",
-        "Whiteboard when it’s mine.",
+        "I use Linear for my own projects, Jira when I have to integrate with a client’s process, and a whiteboard when I’m brainstorming solo.",
       ],
     ],
   },
@@ -46,14 +42,14 @@ const sections = [
 export function BentoSection() {
   return (
     <section className="max-w-2xl mx-auto px-6">
-      <div className="space-y-8">
+      <div className="space-y-12">
         {sections.map((section) => (
           <div
             key={section.title}
             className="space-y-2 hover:opacity-95 transition-opacity"
           >
-            <p className="text-xs uppercase tracking-wider text-muted-foreground">
-              {section.title}
+            <p className="text-sm font-medium uppercase tracking-wider text-foreground/90">
+            {section.title}
             </p>
             <div className="text-sm leading-snug text-foreground/90">
               {section.paragraphs.map((paragraph, index) => (

@@ -6,7 +6,12 @@ export function Header() {
     <header className="flex mb-5 md:mb-10 items-center">
       <Logo />
 
-      <nav className="text-xs grow justify-end items-center flex">
+      <nav className="text-xs grow justify-end items-center flex gap-1">
+        <Link href="/services" className="group p-2">
+          <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 rounded-xl py-0.5 px-1.5 inline-flex">
+            Services
+          </span>
+        </Link>
         <Link href="/about" className="group p-2">
           <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 rounded-xl py-0.5 px-1.5 inline-flex">
             About
