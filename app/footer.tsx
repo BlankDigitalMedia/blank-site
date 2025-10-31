@@ -59,10 +59,7 @@ export function Footer() {
           </div>
           <div className="flex items-center gap-4">
             <A target="_blank" href="https://twitter.com/isblank_dave" className="hover:text-foreground transition-colors">
-              Twitter/X
-            </A>
-            <A target="_blank" href="https://github.com/BlankDigitalMedia/blank-site" className="hover:text-foreground transition-colors">
-              Source
+            Twitter/X
             </A>
           </div>
         </div>

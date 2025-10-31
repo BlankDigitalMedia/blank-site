@@ -8,7 +8,7 @@ Your website has been successfully repositioned from a personal builder blog to 
 
 ## 🎯 Your New Positioning
 
-**"I help local small businesses in Southwest Michigan use AI and simple web tools to save time, look professional, and grow — without breaking the bank."**
+**"I help local small businesses in Southwest Michigan use AI and simple web tools to save time, look professional, and grow, without breaking the bank."**
 
 ## 📋 Before You Launch - Quick Setup
 
@@ -111,7 +111,7 @@ Hey [Name]! Quick update: I'm now focusing on helping local small businesses wit
 ### When Someone Books a Call
 
 **Opening (30 seconds):**
-"Hey [Name], thanks for booking! Tell me about your business — what do you do and who do you serve?"
+"Hey [Name], thanks for booking! Tell me about your business: what do you do and who do you serve?"
 
 **Discovery (10 minutes):**
 1. "What's taking up most of your time right now?"
@@ -267,5 +267,5 @@ Good luck! 🚀
 
 ---
 
-P.S. Keep building your projects and sharing your learnings. The "Builder Notes" section lets you maintain your technical brand while also serving business clients. It's not either/or — it's both.
+P.S. Keep building your projects and sharing your learnings. The "Builder Notes" section lets you maintain your technical brand while also serving business clients. It's not either/or, it's both.
 

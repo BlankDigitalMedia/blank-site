@@ -16,7 +16,7 @@ export function Hero() {
                                 AI tools & fast websites for Southwest Michigan small businesses
                             </h1>
                             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
-                                Save 5–10 hours a week and look professional — without big-agency costs.
+                                Save 5–10 hours a week and look professional, without big-agency costs.
                             </p>
                         </div>
 

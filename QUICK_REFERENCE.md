@@ -8,7 +8,7 @@ Keep this handy for your first 30 days of local business outreach.
 "I help small businesses in Southwest Michigan save time with simple AI tools and automation. Most business owners I meet are spending 10-15 hours a week on repetitive tasks. I fix that."
 
 **Value Proposition (30 seconds):**
-"I build AI tools, websites, and automation for local businesses — fast, affordable, and without the agency runaround. Marine veteran, based in Michigan, work directly with me. Projects typically done in 1-3 weeks."
+"I build AI tools, websites, and automation for local businesses: fast, affordable, and without the agency runaround. Marine veteran, based in Michigan, work directly with me. Projects typically done in 1-3 weeks."
 
 ## 💰 Your Services (Quick Glance)
 
@@ -53,7 +53,7 @@ Keep this handy for your first 30 days of local business outreach.
 ## 💬 Discovery Call Script
 
 **Opening (30 sec):**
-"Hey [Name], thanks for booking! Tell me about your business — what do you do and who do you serve?"
+"Hey [Name], thanks for booking! Tell me about your business: what do you do and who do you serve?"
 
 **Discovery Questions:**
 1. "What's taking up most of your time right now?"

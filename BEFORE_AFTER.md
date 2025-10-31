@@ -124,7 +124,7 @@
 │                                         │
 ├─────────────────────────────────────────┤
 │  Free AI Audit (30 Minutes)             │
-│  $0 — No catch, no commitment           │
+│  $0: No catch, no commitment           │
 │                                         │
 │  Perfect if you:                        │
 │  • Keep hearing about AI but don't know │
@@ -175,7 +175,7 @@
 │                                         │
 ├─────────────────────────────────────────┤
 │  Website Checkup (Quick Win)            │
-│  $150 — Done in 48 hours                │
+│  $150: Done in 48 hours                │
 │                                         │
 │  Video showing:                         │
 │  • What's slowing it down               │
@@ -276,7 +276,7 @@
 │                                         │
 │  I build AI tools, websites, and        │
 │  automations for local businesses in    │
-│  Southwest Michigan — fast, affordable, │
+│  Southwest Michigan: fast, affordable, │
 │  and without the agency runaround.      │
 │                                         │
 ├─────────────────────────────────────────┤
@@ -307,12 +307,12 @@
 ├─────────────────────────────────────────┤
 │  What Makes Me Different                │
 │                                         │
-│  • No agency overhead — work directly   │
+│  • No agency overhead: work directly   │
 │    with me                              │
-│  • I actually build things — not just   │
+│  • I actually build things: not just   │
 │    consulting                           │
-│  • Local and accessible — based in MI   │
-│  • Practical, not fancy — trying to     │
+│  • Local and accessible: based in MI   │
+│  • Practical, not fancy: trying to     │
 │    save you 10 hours/week               │
 │                                         │
 ├─────────────────────────────────────────┤

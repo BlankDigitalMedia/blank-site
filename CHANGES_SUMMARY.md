@@ -279,7 +279,7 @@ Track these weekly:
 
 ---
 
-All changes maintain your authentic voice while making it crystal clear how you help local small businesses. Your builder content is preserved as "Builder Notes" — you can continue sharing experiments and learnings while also serving business clients.
+All changes maintain your authentic voice while making it crystal clear how you help local small businesses. Your builder content is preserved as "Builder Notes" so you can continue sharing experiments and learnings while also serving business clients.
 
 The site now works double duty: lead generation for services AND personal brand building through your posts.
 

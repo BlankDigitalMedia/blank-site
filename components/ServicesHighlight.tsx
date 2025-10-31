@@ -19,7 +19,7 @@ export function ServicesHighlight() {
     {
       icon: SparklesIcon,
       title: "Simple AI Tools",
-      description: "Custom automation for repetitive tasks — data entry, customer service, content",
+      description: "Custom automation for repetitive tasks: data entry, customer service, content",
       price: "From $500",
       link: "/services#ai-tools",
     },

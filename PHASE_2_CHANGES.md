@@ -8,7 +8,7 @@
 
 ### Added/Modified ✅
 1. **New Newsletter Section** with SMB-focused copy:
-   - Old: "Join the lab notes — occasional updates, no spam"
+   - Old: "Join the lab notes: occasional updates, no spam"
    - New: "Practical fixes for Southwest Michigan small businesses. 1–2 emails per month. No agency fluff."
    
 2. **Streamlined Builder Notes**:

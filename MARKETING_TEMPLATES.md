@@ -190,7 +190,7 @@ I know you're [running X business / connected to local business community], and 
 
 Would you have 15 minutes this week for a quick call? Happy to share what I'm working on and get your thoughts.
 
-No pitch — just want to learn and see if there's a way I can be helpful to you or people you know.
+No pitch, just want to learn and see if there's a way I can be helpful to you or people you know.
 
 Let me know what works for you.
 
@@ -208,7 +208,7 @@ Hi [Name],
 
 Really enjoyed talking with you at [event name] yesterday about [specific thing you discussed].
 
-I wanted to follow up on [topic they mentioned] — I actually built something similar for a client recently that might be relevant.
+I wanted to follow up on [topic they mentioned]: I actually built something similar for a client recently that might be relevant.
 
 Would love to grab coffee sometime and continue the conversation. I'm always looking to learn more about what local businesses are dealing with.
 
@@ -251,7 +251,7 @@ What you get: [Deliverables]
 
 Want to move forward? Just reply and I'll send over a simple proposal.
 
-Or if you want to think about it, totally fine — no pressure. Feel free to reach out whenever you're ready.
+Or if you want to think about it, totally fine, no pressure. Feel free to reach out whenever you're ready.
 
 Best,
 Dave
@@ -281,7 +281,7 @@ automation.
 🎯 WHAT I DO
 
 ✓ Free AI Audits ($0)
-  See how AI could help your business — no obligation
+  See how AI could help your business: no obligation
 
 ✓ Simple AI Tools (from $500)
   Automate customer service, data entry, content
@@ -325,7 +325,7 @@ Marine veteran turned technologist. I build AI tools, websites, and automation f
 
 Based in Bangor, serving South Haven, Kalamazoo, and Grand Rapids.
 
-Offering free 15-minute consultations — link in bio.
+Offering free 15-minute consultations: link in bio.
 
 #MichiganBusiness #SmallBusiness #AITools #LocalBusiness #VeteranOwned #SouthwestMichigan
 ```
@@ -342,7 +342,7 @@ This is what I build for local businesses.
 
 Simple tools that save time and eliminate headaches.
 
-Free audits available — DM me or link in bio.
+Free audits available: DM me or link in bio.
 
 #BusinessAutomation #SmallBusinessTips #Productivity
 ```
@@ -358,7 +358,7 @@ Really glad we got that [project] working for you! Feels good knowing you're sav
 
 Quick ask: If you know anyone else who might benefit from something similar, I'd love if you could send them my way.
 
-I'm offering free audits to see how AI/automation could help their business — no pressure, just value.
+I'm offering free audits to see how AI/automation could help their business: no pressure, just value.
 
 They can book here: cal.com/daveblank
 
@@ -417,7 +417,7 @@ I build simple AI tools and automation
 for Southwest Michigan small businesses.
 
 FREE 30-minute audit to show you what's
-possible — no pitch, no obligation.
+possible: no pitch, no obligation.
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
@@ -440,7 +440,7 @@ Fast. Affordable. No agency overhead.
 
 I help small businesses in Southwest Michigan save time with simple AI tools and automation.
 
-Most business owners I meet are working 60+ hour weeks. They're drowning in admin work — emails, data entry, scheduling, all that repetitive stuff that doesn't actually grow the business.
+Most business owners I meet are working 60+ hour weeks. They're drowning in admin work: emails, data entry, scheduling, all that repetitive stuff that doesn't actually grow the business.
 
 That's what I fix.
 
@@ -452,7 +452,7 @@ If you're spending more than 10 hours a week on admin work, we should talk.
 
 I'm offering free 30-minute audits where I'll show you exactly how AI could help your specific business.
 
-Come find me after — I'd love to chat."
+Come find me after; I'd love to chat."
 ```
 
 ## Voicemail Drop Script

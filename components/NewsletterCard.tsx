@@ -41,7 +41,7 @@ export function NewsletterCard() {
   return (
     <form onSubmit={handleSubmit}>
       <p className="mb-2.5 text-sm text-muted-foreground">
-        Join the lab notes — occasional updates, no spam.
+        Join the lab notes: occasional updates, no spam.
       </p>
       <FieldGroup>
         <Field orientation="vertical" className="gap-2">

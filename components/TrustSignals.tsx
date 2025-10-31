@@ -15,7 +15,7 @@ export function TrustSignals() {
     {
       icon: CheckCircleIcon,
       title: "No Agency Overhead",
-      description: "Work directly with me — fast decisions, clear communication",
+      description: "Work directly with me: fast decisions, clear communication",
     },
   ];
 

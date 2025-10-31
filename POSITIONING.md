@@ -55,7 +55,7 @@ Added "Services" link to header navigation for easy discovery.
 
 ## Your New Positioning Statement
 
-**"I help local small businesses in Southwest Michigan use AI and simple web tools to save time, look professional, and grow — without breaking the bank."**
+**"I help local small businesses in Southwest Michigan use AI and simple web tools to save time, look professional, and grow, without breaking the bank."**
 
 ## Target Audience
 

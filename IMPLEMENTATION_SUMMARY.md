@@ -23,7 +23,7 @@ Removed distracting elements from homepage per Oracle's second recommendation:
 
 ### 2. **Updated Copy & Messaging**
 - New headline: "AI tools & fast websites for Southwest Michigan small businesses"
-- Subhead: "Save 5–10 hours a week and look professional — without big-agency costs"
+- Subhead: "Save 5–10 hours a week and look professional, without big-agency costs"
 - CTA text changed from "See What I Can Help With" → "See Services & Pricing"
 
 ### 3. **Trust Signals (No Testimonials Yet)**

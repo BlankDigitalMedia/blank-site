@@ -54,13 +54,9 @@ function List({ posts }) {
                   )}
 
                   <span className="grow">
-                    <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-all rounded-xl py-0.5 px-1.5">
-                      {post.title}
-                    </span>
+                  <span className="group-hover:bg-neutral-200 dark:group-hover:bg-neutral-700 transition-all rounded-xl py-0.5 px-1.5">
+                  {post.title}
                   </span>
-
-                  <span className="text-neutral-500 dark:text-neutral-500 text-xs mt-0.5">
-                    {post.viewsFormatted}
                   </span>
                 </span>
               </span>
